@@ -1,0 +1,73 @@
+*{
+    margin：0；
+    padding：0；
+}
+body{
+    background-color: #eeeeee;
+}
+.container{
+    width: 960px;
+    height: 450px;
+    margin: 60px auto;
+    position: relative;
+    background-color: aquamarine;
+}
+.pic{
+    width: 160px;
+}
+img:hover{
+    box-shadow: 15px 15px 20px rgba(50,50,50,0.4);
+    transform: rotate(0deg) scale(1.20);
+    z-index: 10;
+}
+img{
+    padding: 10px 10px 15px;
+    background: white;
+    border: 1px solid #dddddd;
+box-shadow: 2px 2px 3px rgba(50,50,100,1);
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    position: absolute;
+    z-index: 1;
+}
+.pic1{
+    transform: rotate(-5deg);
+}
+.pic2{
+    transform: rotate(-20deg);
+    left: 400px;
+    top: 375px;
+}
+.pic3{
+    left: 300px;
+     transform: rotate(10deg);
+ }
+.pic4{
+    left: 250px;
+      transform: rotate(30deg);
+  }
+.pic5 {
+    left: 300px;
+    top: 200px;
+    transform: rotate(20deg);
+}
+
+.pic6{left: 400px;
+    top: 350px;
+     transform: rotate(-35deg);
+ }
+.pic7{top: 400px;
+    left: 100px;
+      transform: rotate(-5deg);
+  }
+.pic8{
+
+       transform: rotate(-10deg);
+   }
+.pic9{
+
+    transform: rotate(15deg);
+}

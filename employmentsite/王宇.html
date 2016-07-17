@@ -1,0 +1,436 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="paper-collapse.css">
+    <script type="text/javascript" src="paper-collapse.js"></script>
+    <style type="text/css">
+      .element:hover, .element:focus, .element:active{background-color: #afd9ee;}
+              /* Pulse */
+        @-webkit-keyframes hvr-pulse {
+          25% {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        
+          75% {
+            -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+          }
+        }
+        
+        @keyframes hvr-pulse {
+          25% {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        
+          75% {
+            -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+          }
+        }
+        
+        .hvr-pulse {
+          display: inline-block;
+          vertical-align: middle;
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          -moz-osx-font-smoothing: grayscale;
+        }
+        .hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+          -webkit-animation-name: hvr-pulse;
+          animation-name: hvr-pulse;
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+          -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+        }
+             /* Bounce In */
+            
+        .hvr-bounce-in {
+          display: inline-block;
+          vertical-align: middle;
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+        }
+        .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+           
+          z-index:30;
+          -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+          -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+          transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+        }
+              /* Rectangle Out */
+        .hvr-rectangle-out {
+          display: inline-block;
+          vertical-align: middle;
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          -moz-osx-font-smoothing: grayscale;
+          position: relative;
+          background: white;
+          -webkit-transition-property: color;
+          transition-property: color;
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+        }
+        .hvr-rectangle-out:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: #2098d1;
+          -webkit-transform: scale(0);
+          transform: scale(0);
+          -webkit-transition-property: transform;
+          transition-property: transform;
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+          -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+        }
+        .hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
+          color: white;
+        }
+        .hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+    </style>
+  </head><body>
+    <div class="navbar navbar-default navbar-fixed-top ">
+      <div class="container ">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="btn btn-lg btn-link" href="#maodain">注册</a>
+          <a class="btn btn-lg btn-link" data-toggle="modal" data-target=".bs-example-modal-sm">登陆</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="element">
+              <a class="btn btn-lg " id="back_top">首页</a>
+            </li>
+            <li class="element dropdown" role="presentation">
+              <a class="btn btn-lg  dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">导航</a>
+              <ul class="dropdown-menu ">
+                <div class="section">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-3 hvr-rectangle-out">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                          <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                          <br>Ut enim ad minim veniam, quis nostrud</p>
+                      </div>
+                      <div class="col-md-3 hvr-rectangle-out">
+                        <ol>
+                          <li>
+                            <a href="侧边栏\ListStyle\index.html">侧边栏</a>
+                          </li>
+                          <li>
+                            <a href="计数器\计数器.html">计数器</a>
+                          </li>
+                          <li>
+                            <a href="瀑布流\index.html">瀑布流</a>
+                          </li>
+                          <li>
+                            <a href="遮罩tween\导航设计.html">遮罩tween</a>
+                          </li>
+                          <li>
+                            <a href="幽灵按钮\index.html">幽灵按钮</a>
+                          </li>
+                        </ol>
+                      </div>
+                      <div class="col-md-3 hvr-rectangle-out">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                          <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                          <br>Ut enim ad minim veniam, quis nostrud</p>
+                      </div>
+                      <div class="col-md-3 hvr-rectangle-out">
+                        <ol>
+                          <li>
+                            <a href="切换按钮\ListStyle\index.html">切换按钮</a>
+                          </li>
+                          <li>
+                            <a href="切换板\index.html">切换板</a>
+                          </li>
+                          <li>
+                            <a href="提示工具\index.html">提示工具</a>
+                          </li>
+                          <li>
+                            <a href="图片墙\Pic\index.html">照片墙</a>
+                          </li>
+                          <li>
+                            <a href="小游戏easyjs\小游戏.html">小游戏easy</a>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section" style="margin-top:72px">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="https://ununsplash.imgix.net/reserve/r0r252VR6WqPRsxngGUE_telefoon%20politie.jpg?w=1024&amp;q=50&amp;fm=jpg&amp;s=30a261ce928af70d4f9a3fe0cf394bc3" class="img-responsive">
+          </div>
+          <div class="col-md-10">
+            <div class="row">
+              <div class=" col-md-12">
+                <form role="form">
+                  <div class="form-group">
+                    <div class="input-group " style="margin-top:3.5%">
+                      <input type="text" class="form-control " placeholder="输入商品" style="height:50px">
+                      <span class="input-group-btn ">
+                        <a class="btn btn-info" type="submit" style="height:50px;line-height:35px">搜索</a>
+                      </span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="images\1_03.png" class="hidden-sm hidden-xs img-responsive">
+          </div>
+          <div class="col-md-9">
+            <div class="carousel slide" id="carousel-example" data-interval="false" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="item">
+                  <img src="https://unsplash.imgix.net/photo-1422022098106-b3a9edc463af?w=1024&amp;q=50&amp;fm=jpg&amp;s=bbe0beb19ba846e0de37abd1f63acf13">
+                  <div class="carousel-caption">
+                    <h2>Title</h2>
+                    <p>Description</p>
+                  </div>
+                </div>
+                <div class="item active">
+                  <img src="https://ununsplash.imgix.net/photo-1415302199888-384f752645d0?w=1024&amp;q=50&amp;fm=jpg&amp;s=823bdcc1b7ad955f5180efd352561016">
+                  <div class="carousel-caption">
+                    <h2>Title</h2>
+                    <p>Description</p>
+                  </div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-example" data-slide="prev"><i class="icon-prev  fa fa-angle-left"></i></a>
+              <a class="right carousel-control" href="#carousel-example" data-slide="next"><i class="icon-next fa fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="btn-group btn-group-justified">
+              <a href="#" class="btn btn-default hvr-pulse ">Left</a>
+              <a href="#" class="btn btn-default hvr-pulse">Middle</a>
+              <a href="#" class="btn btn-default hvr-pulse">Right</a>
+              <a href="#" class="btn btn-default hvr-pulse">Right</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="images\2_03.png" class="hidden-sm hidden-xs img-responsive">
+          </div>
+          <div class="col-md-9 text-center">
+            <div class="row">
+              <div class="col-md-4 hvr-bounce-in">
+                <a><img src="https://unsplash.imgix.net/photo-1422513391413-ddd4f2ce3340?w=1024&amp;q=50&amp;fm=jpg&amp;s=282e5978de17d6cd2280888d16f06f04" class="img-responsive"></a>
+                <h3>A title</h3>
+                <p>饭卡里打飞机了咖啡加积分elit,&nbsp;</p>
+              </div>
+              <div class="col-md-4 hvr-bounce-in">
+                <a class="hvr-bounce-in"><img src="https://unsplash.imgix.net/photo-1422405153578-4bd676b19036?w=1024&amp;q=50&amp;fm=jpg&amp;s=5ecc4c704ea97d85ea550f84a1499228" class="img-responsive"></a>
+                <h2>A title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p>
+              </div>
+              <div class="col-md-4">
+                <a class="hvr-bounce-in"><img src="https://unsplash.imgix.net/photo-1415871989540-61fe9268d3c8?w=1024&amp;q=50&amp;fm=jpg&amp;s=d4ccd3c8661437d6e3ea5e88c63c647f" class="img-responsive"></a>
+                <h2>A ttile</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 hvr-bounce-in">
+                <a class="hvr-bounce-in"><img src="https://unsplash.imgix.net/uploads/14134890947503c6effdc/72adf455?w=1024&amp;q=50&amp;fm=jpg&amp;s=b2419796e3006cb1da9755266b0aca89" class="img-responsive"></a>
+                <h3>A title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p>
+              </div>
+              <div class="col-md-4 hvr-bounce-in">
+                <a><img src="https://ununsplash.imgix.net/reserve/RONyPwknRQOO3ag4xf3R_Kinsey.jpg?w=1024&amp;q=50&amp;fm=jpg&amp;s=c8e85e7825f6c74ff13321833a9bc28d" class="img-responsive"></a>
+                <h3>A title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p>
+              </div>
+              <div class="col-md-4">
+                <a class="hvr-bounce-in"><img src="https://unsplash.imgix.net/photo-1422022098106-b3a9edc463af?w=1024&amp;q=50&amp;fm=jpg&amp;s=bbe0beb19ba846e0de37abd1f63acf13" class="img-responsive"></a>
+                <h2>A title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="collapse-card " id="maodain">
+              <div class="collapse-card__heading">
+                <div class="collapse-card__title">
+                  <i class="-circle fa fa-5x fa-angle-double-down fa-fw"></i>
+                  <h3>注册点这里</h3>
+                </div>
+              </div>
+              <div class="collapse-card__body">
+                <form role="form">
+                  <div class="form-group">
+                    <label class="control-label" for="exampleInputEmail1">邮箱</label>
+                    <input class="form-control" id="exampleInputEmail1" placeholder="邮箱" type="email">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label" for="exampleInputPassword1">密码</label>
+                    <input class="form-control" id="exampleInputPassword1" placeholder="密码" type="password">
+                  </div>
+                  <button type="submit" class="btn btn-default">提交</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>Footer header</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+              <br>Ut enim ad minim veniam, quis nostrud</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-info text-right">
+              <br>
+              <br>
+            </p>
+            <div class="row">
+              <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 hidden-xs text-right">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-muted"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-muted"></i></a>
+                <a href="#"><i class="fa fa-3x fa-facebook fa-fw text-muted"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-muted"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(function () {
+                                                                $(".collapse-card").paperCollapse();
+                                                              });
+                       $("#back_top").click(function(){      
+                            $("html,body").animate({scrollTop:0},1000);
+                        });
+    </script>
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <div class="row">
+            <div class="col-md-12">
+              <form class="form-horizontal" role="form">
+                <div class="form-group">
+                  <div class="col-sm-2 ">
+                    <label for="inputEmail3" class="control-label">邮箱</label>
+                  </div>
+                  <div class="col-sm-8">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-2">
+                    <label for="inputPassword3" class="control-label">密码</label>
+                  </div>
+                  <div class="col-sm-8">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">Remember me</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Sign in</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+</body></html>
