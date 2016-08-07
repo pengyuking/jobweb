@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #61122f;
+  background-color:#951C49;
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -196,7 +196,7 @@ body {
 @media (min-width: 992px) and (max-width: 1199px) {
   /* 头部 */
   #logo-img {
-    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    background: url('../images/restaurant-logo.jpg') no-repeat;
     width: 100px;
     height: 100px;
     margin: 5px 5px 5px 0;
@@ -285,10 +285,7 @@ body {
     margin-top: 30px;
     padding: 0;
   }
-  #menu-tile, #specials-tile {
-    width: 360px;
-    margin: 0 auto 15px;
-  }
+  
 }
 
 
@@ -302,11 +299,7 @@ body {
   
   
   /* 主页 */
-  #menu-tile, #specials-tile {
-    width: 280px;
-    margin: 0 auto 15px;
-  }
-
+  
   .col-xxs-12 {
     position: relative;
     min-height: 1px;

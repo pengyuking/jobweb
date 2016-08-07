@@ -1,5 +1,6 @@
 <html><head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="jquery-3.0.0.min.js"></script>
     <script type="text/javascript" src="bootstrap.min.js"></script>
@@ -54,28 +55,27 @@
           -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
         }
-             /* Bounce In */
-            
-        .hvr-bounce-in {
-          display: inline-block;
-          vertical-align: middle;
-          -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-          -moz-osx-font-smoothing: grayscale;
-          -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-        }
-        .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
-           
-          z-index:30;
-          -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-          -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-          transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-        }
+           .hvr-grow 
+           {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+        } 
+        
               /* Rectangle Out */
         .hvr-rectangle-out {
           display: inline-block;
@@ -203,7 +203,7 @@
     <div class="section" style="margin-top:72px">
       <div class="container">
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-md-2 hvr-grow">
             <img src="https://ununsplash.imgix.net/reserve/r0r252VR6WqPRsxngGUE_telefoon%20politie.jpg?w=1024&amp;q=50&amp;fm=jpg&amp;s=30a261ce928af70d4f9a3fe0cf394bc3" class="img-responsive">
           </div>
           <div class="col-md-10">
@@ -274,40 +274,40 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 hvr-grow">
             <img src="images\2_03.png" class="hidden-sm hidden-xs img-responsive">
           </div>
           <div class="col-md-9 text-center">
             <div class="row">
-              <div class="col-md-4 hvr-bounce-in">
+              <div class="col-md-4 ">
                 <a><img src="https://unsplash.imgix.net/photo-1422513391413-ddd4f2ce3340?w=1024&amp;q=50&amp;fm=jpg&amp;s=282e5978de17d6cd2280888d16f06f04" class="img-responsive"></a>
                 <h3>A title</h3>
                 <p>饭卡里打飞机了咖啡加积分elit,&nbsp;</p>
               </div>
-              <div class="col-md-4 hvr-bounce-in">
-                <a class="hvr-bounce-in"><img src="https://unsplash.imgix.net/photo-1422405153578-4bd676b19036?w=1024&amp;q=50&amp;fm=jpg&amp;s=5ecc4c704ea97d85ea550f84a1499228" class="img-responsive"></a>
+              <div class="col-md-4 ">
+                <a ><img src="https://unsplash.imgix.net/photo-1422405153578-4bd676b19036?w=1024&amp;q=50&amp;fm=jpg&amp;s=5ecc4c704ea97d85ea550f84a1499228"  class="img-responsive"></a>
                 <h2>A title</h2>
                 <p>L不知道写啥不知道写啥不知道写啥不知道写啥t,&nbsp;</p>
               </div>
               <div class="col-md-4">
-                <a class="hvr-bounce-in"><img src="https://unsplash.imgix.net/photo-1415871989540-61fe9268d3c8?w=1024&amp;q=50&amp;fm=jpg&amp;s=d4ccd3c8661437d6e3ea5e88c63c647f" class="img-responsive"></a>
+                <a ><img src="https://unsplash.imgix.net/photo-1415871989540-61fe9268d3c8?w=1024&amp;q=50&amp;fm=jpg&amp;s=d4ccd3c8661437d6e3ea5e88c63c647f" class="img-responsive"></a>
                 <h2>A ttile</h2>
                 <p>不知道写啥不知道写啥不知道写啥不知道写啥不知道写啥lit,&nbsp;</p>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-4 hvr-bounce-in">
-                <a class="hvr-bounce-in"><img src="https://unsplash.imgix.net/uploads/14134890947503c6effdc/72adf455?w=1024&amp;q=50&amp;fm=jpg&amp;s=b2419796e3006cb1da9755266b0aca89" class="img-responsive"></a>
+              <div class="col-md-4 ">
+                <a ><img src="https://unsplash.imgix.net/uploads/14134890947503c6effdc/72adf455?w=1024&amp;q=50&amp;fm=jpg&amp;s=b2419796e3006cb1da9755266b0aca89" class="img-responsive"></a>
                 <h3>A title</h3>
                 <p>L不知道写啥不知道写啥不知道写啥不知道写啥不知道写啥 elit,&nbsp;</p>
               </div>
-              <div class="col-md-4 hvr-bounce-in">
+              <div class="col-md-4 ">
                 <a><img src="https://ununsplash.imgix.net/reserve/RONyPwknRQOO3ag4xf3R_Kinsey.jpg?w=1024&amp;q=50&amp;fm=jpg&amp;s=c8e85e7825f6c74ff13321833a9bc28d" class="img-responsive"></a>
                 <h3>A title</h3>
                 <p>L不知道写啥不知道写啥不知道写啥不知道写啥不知道写啥it,&nbsp;</p>
               </div>
               <div class="col-md-4">
-                <a class="hvr-bounce-in"><img src="https://unsplash.imgix.net/photo-1422022098106-b3a9edc463af?w=1024&amp;q=50&amp;fm=jpg&amp;s=bbe0beb19ba846e0de37abd1f63acf13" class="img-responsive"></a>
+                <a ><img src="https://unsplash.imgix.net/photo-1422022098106-b3a9edc463af?w=1024&amp;q=50&amp;fm=jpg&amp;s=bbe0beb19ba846e0de37abd1f63acf13" class="img-responsive"></a>
                 <h2>A title</h2>
                 <p>L不知道写啥不知道写啥不知道写啥不知道写啥不知道写啥不知道写啥t,&nbsp;</p>
               </div>
